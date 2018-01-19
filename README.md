@@ -12,3 +12,4 @@ There are example images already in these folders to test the program on.
 Double click the Image Processor executable to run the program, 
 which will create an output directory containing processed images.
 
+The first time the program is run, a Windows Defender popup will stop it from running, due to it being an unrecognised program. Click 'More info' and then click 'Run anyway'. Don't make a habit of doing this, only run apps from trusted sources.
