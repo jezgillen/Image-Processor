@@ -1,5 +1,5 @@
 # Image-Processor
-Overlays logos and banners onto input images
+Overlays logos and a banner onto input images
 
 ## Setup instructions
 Download zip file from [this link](https://github.com/jezgillen/Image-Processor/archive/master.zip "Image Processor.zip"). 
