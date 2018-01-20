@@ -1,8 +1,10 @@
 # Image-Processor
-Overlays logos and a banner onto input images
+Overlays logos and a banner onto input images.
+
+This script works with both python2 and python3.
 
 ## Setup instructions
-This script works with both python2 and python3.
+
 Download zip file from [this link](https://github.com/jezgillen/Image-Processor/archive/mac.zip "Image Processor.zip"). 
 Unzip file, to find the Image Processor script and three folders.
 The images to be processed can be put in the 'input' folder, 
