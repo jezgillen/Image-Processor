@@ -11,9 +11,12 @@ and the logos to be placed at the bottom of the input should go in the 'bottom' 
 There are example images already in these folders to test the program on.
 
 To install required packages, go to the unzipped folder in the terminal and run:
+
 ```sudo pip install -r requirements.txt```
+
 If you don't have pip, you'll have to install that first
 
 If this is successful, you can then run the script with:
+
 ```python imageProcessor.py```
 
