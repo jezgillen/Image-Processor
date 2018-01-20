@@ -47,10 +47,10 @@ def overlay_transparent(background_img, img_to_overlay_t, x, y, shadow=False):
     mask = temp
 
     # Fade out the logo from the background image.
-    img1_bg = cv2.multiply(cv2.bitwise_not(mask), background_area_of_interest, scale=1/255)
+    img1_bg = cv2.multiply(cv2.bitwise_not(mask), background_area_of_interest, scale=1./255)
 
     # Fade out the logo from the logo image in prep for addition.
-    img2_fg = cv2.multiply(mask, overlay_color, scale=1/255)
+    img2_fg = cv2.multiply(mask, overlay_color, scale=1./255)
 
     # Update the original image with our new ROI
     bg_img[y:y+h, x:x+w] = cv2.add(img1_bg, img2_fg)
