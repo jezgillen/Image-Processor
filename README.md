@@ -1,7 +1,7 @@
-# Image-Processor
+# Image-Processor-mac
 Overlays logos and a banner onto input images.
 
-This script works with both python2 and python3.
+This script works with both python2 and python3
 
 ## Setup instructions
 
