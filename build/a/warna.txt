@@ -1,8 +1,8 @@
 missing module named 'win32com.gen_py' - imported by win32com, c:\users\user\appdata\local\programs\python\python36\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_win32comgenpy.py
 missing module named pyimod03_importers - imported by c:\users\user\appdata\local\programs\python\python36\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_pkgres.py
-missing module named 'pkg_resources.extern.pyparsing' - imported by pkg_resources._vendor.packaging.requirements, pkg_resources._vendor.packaging.markers
 missing module named __builtin__ - imported by numpy.core.numerictypes, numpy.core.numeric, numpy.distutils.misc_util, numpy.lib.function_base, numpy.lib._iotools, numpy.ma.core, numpy, pkg_resources._vendor.pyparsing
 missing module named ordereddict - imported by pkg_resources._vendor.pyparsing
+missing module named 'pkg_resources.extern.pyparsing' - imported by pkg_resources._vendor.packaging.requirements, pkg_resources._vendor.packaging.markers
 missing module named 'com.sun' - imported by pkg_resources._vendor.appdirs
 missing module named com - imported by pkg_resources._vendor.appdirs
 missing module named StringIO - imported by numpy.lib.utils, numpy.testing.nose_tools.utils, numpy.lib.format, pkg_resources._vendor.six
@@ -22,7 +22,7 @@ missing module named 'multiprocessing.forking' - imported by c:\users\user\appda
 missing module named resource - imported by posix, X:\a.py
 missing module named posix - imported by os, X:\a.py
 missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, X:\a.py
-missing module named 'org.python' - imported by pickle, setuptools.sandbox, X:\a.py, xml.sax
+missing module named org - imported by pickle, X:\a.py
 missing module named readline - imported by cmd, code, pdb, X:\a.py
 excluded module named _frozen_importlib - imported by importlib, importlib.abc, X:\a.py
 missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, X:\a.py
@@ -34,9 +34,9 @@ missing module named vms_lib - imported by platform, X:\a.py
 missing module named termios - imported by tty, getpass, X:\a.py
 missing module named urllib.splittag - imported by urllib, setuptools.py26compat
 missing module named grp - imported by shutil, tarfile, pathlib, distutils.archive_util, X:\a.py
-missing module named org - imported by copy, X:\a.py
 missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, pathlib, distutils.util, distutils.archive_util, netrc, getpass, X:\a.py
 missing module named _dummy_threading - imported by dummy_threading, X:\a.py
+missing module named 'org.python' - imported by copy, setuptools.sandbox, X:\a.py, xml.sax
 missing module named numpy.lib.i0 - imported by numpy.lib, numpy.dual
 missing module named numpy.linalg.inv - imported by numpy.linalg, numpy.matrixlib.defmatrix, numpy.lib.polynomial
 missing module named dummy_thread - imported by numpy.core.arrayprint

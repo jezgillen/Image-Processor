@@ -30,12 +30,17 @@ def overlay_transparent(background_img, img_to_overlay_t, x, y, shadow=False):
     y = int(y)
 
     bg_img = background_img
+    h, w, d = img_to_overlay_t.shape
+
+    if(d == 3):
+        bg_img[y:y+h, x:x+w] = img_to_overlay_t
+        return bg_img
+        
     
     # Extract the alpha mask of the RGBA image, convert to RGB 
     b,g,r,mask = cv2.split(img_to_overlay_t)
     overlay_color = cv2.merge((b,g,r))
 
-    h, w, _ = overlay_color.shape
 
     background_area_of_interest = bg_img[y:y+h, x:x+w]
 
