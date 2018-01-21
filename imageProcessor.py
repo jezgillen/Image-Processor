@@ -14,7 +14,6 @@ BANNER_RATIO = 0.2
 BUF = 500
 OVERLAP = 30
 
-#shadow?
 
 if '-h' in sys.argv:
     print(
@@ -56,14 +55,21 @@ except:
     input("Press any key to exit")
     exit()
 
-print("Input images: \n", input_files)
 print("Top images: \n", top_files)
 print("Bottom images: \n", bottom_files)
-print()
 
-inputs = [img for img in [cv2.imread(os.path.join(INPUT_DIR,x)) for x in input_files] if img is not None]
-bottoms = [img for img in [cv2.imread(os.path.join(BOTTOM_DIR,x),-1) for x in bottom_files] if img is not None]
+inputs = []
+names = []
+for img, name in zip([cv2.imread(os.path.join(INPUT_DIR,x)) for x in input_files], input_files):
+    if(img is not None):
+        inputs += [img]
+        names += [name]
+
+bottoms= [img for img in [cv2.imread(os.path.join(BOTTOM_DIR,x),-1) for x in bottom_files] if img is not None]
 tops = [img for img in [cv2.imread(os.path.join(TOP_DIR,x),-1) for x in top_files] if img is not None]
+input_files = names
+print("Input images: \n", input_files)
+print()
 
 assert len(inputs) > 0, "No input images could be read"
 assert len(bottoms) > 0, "No bottom images could be read"
